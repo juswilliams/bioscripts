@@ -1,0 +1,30 @@
+DESCRIPTION: 
+retrieves nt conservation from 0 - 1 (1 being perfectly conserved)
+at each site from a pair of aligned sequences.
+
+USAGE: 
+python scriptname.py infile.fasta outfile.tab windowsize
+where infile == pairwise alignment, FASTA format, only two sequences
+and windowsize is integer only (eg 100, 200, 500, 1000)
+
+NOTES: 
+Treats gaps (- and N) as 0, thus not conserved 
+
+Disclaimer: This script is a work-in-progress, and was written and tested under
+limited conditions; that is, it works under my conditions, but perhaps not
+for everyone, and is not guaranteed to work. This program is free software. It 
+comes without any warranty, to the extent permitted by applicable law.
+
+This script is provided by the author "as is" and "with all faults." The author
+makes no representations or warranties of any kind concerning the safety, 
+suitability, lack of viruses, inaccuracies, typographical errors, or other 
+harmful components of this script. There are inherent dangers in the use of any 
+software, and you are solely responsible for determining whether this script is
+compatible with your equipment and other software installed on your equipment. 
+You are also solely responsible for the protection of your equipment and backup
+of your data, and the author will not be liable for any damages you may suffer 
+in connection with using, modifying, or distributing this script. 
+
+Author: Justin S. Williams. Teh-hui Kao Lab, Penn State University 2016
+Citation: Williams, JS (2016). conservation with sliding window
+http://jswilliamsresume.com/
